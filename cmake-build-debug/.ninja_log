@@ -1,12 +1,10 @@
 # ninja log v5
-2	556	7300980436957674	CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj	d84fd3e34d6fd605
+1	718	7301250701216840	CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj	d84fd3e34d6fd605
 2	505	7300977620352312	CMakeFiles/lab_oop_2_lab.dir/lab_1_first_class.cpp.obj	8289d12902c76075
 3	456	7300980435957598	CMakeFiles/lab_oop_2_lab.dir/lab_1_third_class.cpp.obj	fb2fac920a258e05
-1	459	7300980435987617	CMakeFiles/lab_oop_2_lab.dir/lab_1_second_class.cpp.obj	628b3e48a86c54f0
-556	616	7300980437537669	lab_oop_2_lab.exe	c567104126102c3
-0	125	7301250693942419	build.ninja	81cb1cd948c310cc
 2	592	7301250699939458	CMakeFiles/lab_oop_2_lab.dir/rabbits.cpp.obj	1b459f31f2ca3ee5
+1	459	7300980435987617	CMakeFiles/lab_oop_2_lab.dir/lab_1_second_class.cpp.obj	628b3e48a86c54f0
+719	831	7301250702311131	lab_oop_2_lab.exe	c469af4482cbb7de
+0	125	7301272942106583	build.ninja	81cb1cd948c310cc
 2	593	7301250699939458	CMakeFiles/lab_oop_2_lab.dir/dog.cpp.obj	dde0fbd057776b2e
 3	593	7301250699939458	CMakeFiles/lab_oop_2_lab.dir/cat.cpp.obj	53b99382615b41b0
-1	718	7301250701216840	CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj	d84fd3e34d6fd605
-719	831	7301250702311131	lab_oop_2_lab.exe	c469af4482cbb7de
