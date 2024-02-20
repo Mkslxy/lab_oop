@@ -3,7 +3,7 @@
 using namespace std;
 
 
-class cat {
+class cats {
 private:
     string name;
     int size;
@@ -12,7 +12,7 @@ private:
     string behavior;
 
 public :
-    cat() {
+    cats() {
         name = "Barsik";
         size = 23;
         age = 10;
@@ -20,7 +20,7 @@ public :
         behavior = "Playful";
     }
 
-    cat(string Name, int Size, int Age, string Color, string Behavior) : cat() {
+    cats(string Name, int Size, int Age, string Color, string Behavior) : cats() {
         /*this->name = name;
         this->size = size;
         this->age = age;
@@ -34,7 +34,7 @@ public :
         behavior = Behavior;
     }
 
-    void Print1() {
+    void print() {
         cout << "Name = " << name << "\n" << "Size = " << size << "\n" << "Age = " << age << "\n" << "Color = " << color
              << "\n" << "Behavior = " << behavior << "\n";
     }

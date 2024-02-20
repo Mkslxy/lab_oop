@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class dog {
+class dogs {
 private:
     string name;
     int size;
@@ -12,7 +12,7 @@ private:
     string behavior;
 
 public:
-    dog() {
+    dogs() {
         name = "";
         size = 0;
         age = 0;
@@ -20,7 +20,7 @@ public:
         behavior = "";
     }
 
-    dog(string Name, int Size, int Age, string Color, string Behavior) {
+    dogs(string Name, int Size, int Age, string Color, string Behavior) {
             name = Name;
             size = Size;
             age = Age;
@@ -28,7 +28,7 @@ public:
             behavior = Behavior;
     }
 
-    void Print() {
+    void print() {
         cout << "Name = " << name << "\n"
              << "Size = " << size << "\n"
              << "Age = " << age << "\n"

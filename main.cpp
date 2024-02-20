@@ -1,31 +1,31 @@
 #include <iostream>
-#include "lab_1_first_class.h"
-#include "lab_1_second_class.h"
-#include "lab_1_third_class.h"
+#include "dogs.h"
+#include "cats.h"
+#include "rabbits.h"
 
 using namespace std;
 
 
 int main() {
-    dog Doberman("Sonya", 68, 3, "Black", "Calm and playful");
+    dogs Doberman("Sonya", 68, 3, "Black", "Calm and playful");
 
-    dog German_Shepherd("Sergei", 70, 2, "Black and White", " Energic and playful");
+    dogs German_Shepherd("Sergei", 70, 2, "Black and White", " Energic and playful");
 
-    dog Siberian_Husky(" Haski ", 68, 5, " White ", "Playful and aggressive");
+    dogs Siberian_Husky(" Haski ", 68, 5, " White ", "Playful and aggressive");
 
-    dog Common_Dog;
+    dogs Common_Dog;
 
-    cat Common_cat(" Barsik ", 23, 10, " White ", "Playful ");
+    cats Common_cat(" Barsik ", 23, 10, " White ", "Playful ");
 
-    cat Maincun(" Sigma ", 40, 2, " Black ", " Calm");
+    cats Maincun(" Sigma ", 40, 2, " Black ", " Calm");
 
-    cat Special_cat(" Antonio ", 24, 11, " White ", "Playful and aggressive");
+    cats Special_cat(" Antonio ", 24, 11, " White ", "Playful and aggressive");
 
     rabbits Special_rabbit(" Vitya ", 20, 1, " White ", "Playful and aggressive");
 
     rabbits Common_rabbit(" Kostya ", 20, 1, " White ", "Playful and aggressive");
 
-    rabbits Dead_rabbit(" Avitos ", 20, 1, " White ", "Playful and aggressive");
+    rabbits Middle_rabbit(" Avitos ", 20, 1, " White ", "Playful and aggressive");
 
     int choice;
 
@@ -45,19 +45,16 @@ int main() {
                 cout << endl;
 
                 cout << "1.\n";
-                Doberman.Print();
+                Doberman.print();
                 cout << endl;
 
                 cout << "2.\n";
-                German_Shepherd.Print();
+                German_Shepherd.print();
                 cout << endl;
 
                 cout << "3.\n";
-                Siberian_Husky.Print();
+                Siberian_Husky.print();
                 cout << endl;
-
-                cout <<" 4.\n";
-                Common_Dog.Print();
 
                 int choice2;
 
@@ -75,12 +72,6 @@ int main() {
                         cout << " Thanks for buying !\n";
                         break;
 
-
-                    case 4 :
-                        cout << " Thanks for buying !\n";
-                        break;
-
-
                     default:
                         cout << " We don't have these dogs !\n";
                         break;
@@ -93,15 +84,15 @@ int main() {
                 int choice3;
 
                 cout << "1.\n";
-                cat().Print1();
+                cats().print();
                 cout << endl;
 
                 cout << "2.\n";
-                Maincun.Print1();
+                Maincun.print();
                 cout << endl;
 
                 cout << "3.\n";
-                Special_cat.Print1();
+                Special_cat.print();
                 cout << endl;
 
                 cin >> choice3;
@@ -133,15 +124,15 @@ int main() {
                 int choice4;
 
                 cout << "1.\n";
-                Special_rabbit.Print2();
+                Special_rabbit.print();
                 cout << endl;
 
                 cout << "2.\n";
-                Common_rabbit.Print2();
+                Common_rabbit.print();
                 cout << endl;
 
                 cout << "3.\n";
-                Dead_rabbit.Print2();
+                Middle_rabbit.print();
                 cout << endl;
 
                 cin >> choice4;

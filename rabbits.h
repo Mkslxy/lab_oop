@@ -28,7 +28,7 @@ public :
 
     }
 
-    void Print2() {
+    void print() {
         cout << "Name = " << name << "\n" << "Size = " << size << "\n" << "Age = " << age << "\n" << "Color = " << color
              << "\n" << "Behavior = " << behavior << "\n";
     }
