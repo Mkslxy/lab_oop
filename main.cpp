@@ -1,31 +1,29 @@
 #include <iostream>
-#include "dogs.h"
-#include "cats.h"
-#include "rabbits.h"
+#include "Dog.h"
+#include "Cat.h"
+#include "Rabbit.h"
 
 using namespace std;
 
 
 int main() {
-    dogs Doberman("Sonya", 68, 3, "Black", "Calm and playful");
+    Dog doberman("Sonya", 68, 3, "Black", "Calm and playful");
 
-    dogs German_Shepherd("Sergei", 70, 2, "Black and White", " Energic and playful");
+    Dog german_shepherd("Sergei", 70, 2, "Black and White", " Energic and playful");
 
-    dogs Siberian_Husky(" Haski ", 68, 5, " White ", "Playful and aggressive");
+    Dog siberian_husky(" Haski ", 68, 5, " White ", "Playful and aggressive");
 
-    dogs Common_Dog;
+    Cat common_cat(" Barsik ", 23, 10, " White ", "Playful ");
 
-    cats Common_cat(" Barsik ", 23, 10, " White ", "Playful ");
+    Cat maincun(" Sigma ", 40, 2, " Black ", " Calm");
 
-    cats Maincun(" Sigma ", 40, 2, " Black ", " Calm");
+    Cat special_cat(" Antonio ", 24, 11, " White ", "Playful and aggressive");
 
-    cats Special_cat(" Antonio ", 24, 11, " White ", "Playful and aggressive");
+    Rabbit special_rabbit(" Vitya ", 20, 1, " White ", "Playful and aggressive");
 
-    rabbits Special_rabbit(" Vitya ", 20, 1, " White ", "Playful and aggressive");
+    Rabbit common_rabbit(" Kostya ", 20, 1, " White ", "Playful and aggressive");
 
-    rabbits Common_rabbit(" Kostya ", 20, 1, " White ", "Playful and aggressive");
-
-    rabbits Middle_rabbit(" Avitos ", 20, 1, " White ", "Playful and aggressive");
+    Rabbit middle_rabbit(" Avitos ", 20, 1, " White ", "Playful and aggressive");
 
     int choice;
 
@@ -45,15 +43,15 @@ int main() {
                 cout << endl;
 
                 cout << "1.\n";
-                Doberman.print();
+                doberman.print();
                 cout << endl;
 
                 cout << "2.\n";
-                German_Shepherd.print();
+                german_shepherd.print();
                 cout << endl;
 
                 cout << "3.\n";
-                Siberian_Husky.print();
+                siberian_husky.print();
                 cout << endl;
 
                 int choice2;
@@ -73,7 +71,7 @@ int main() {
                         break;
 
                     default:
-                        cout << " We don't have these dogs !\n";
+                        cout << " We don't have these Dog !\n";
                         break;
                 }
                 break;
@@ -84,15 +82,15 @@ int main() {
                 int choice3;
 
                 cout << "1.\n";
-                cats().print();
+                Cat().print();
                 cout << endl;
 
                 cout << "2.\n";
-                Maincun.print();
+                maincun.print();
                 cout << endl;
 
                 cout << "3.\n";
-                Special_cat.print();
+                special_cat.print();
                 cout << endl;
 
                 cin >> choice3;
@@ -111,7 +109,7 @@ int main() {
                         break;
 
                     default:
-                        cout << " We don't have these cats !\n";
+                        cout << " We don't have these Cat !\n";
                         break;
                 }
                 break;
@@ -124,15 +122,15 @@ int main() {
                 int choice4;
 
                 cout << "1.\n";
-                Special_rabbit.print();
+                special_rabbit.print();
                 cout << endl;
 
                 cout << "2.\n";
-                Common_rabbit.print();
+                common_rabbit.print();
                 cout << endl;
 
                 cout << "3.\n";
-                Middle_rabbit.print();
+                middle_rabbit.print();
                 cout << endl;
 
                 cin >> choice4;
@@ -151,7 +149,7 @@ int main() {
                         break;
 
                     default:
-                        cout << " We don't have these rabbits !\n";
+                        cout << " We don't have these Rabbit !\n";
                         break;
                 }
                 break;
