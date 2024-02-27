@@ -13,9 +13,9 @@ int main() {
 
     Dog siberian_husky(" Haski ", 68, 5, " White ", "Playful and aggressive");
 
-    Cat common_cat(" Barsik ", 23, 10, " White ", "Playful ");
+    Cat common_cat(" Vasil ", 25, 10, " White ", "Playful ");
 
-    Cat maincun(" Sigma ", 40, 2, " Black ", " Calm");
+    Cat copy = common_cat;
 
     Cat special_cat(" Antonio ", 24, 11, " White ", "Playful and aggressive");
 
@@ -86,7 +86,7 @@ int main() {
                 cout << endl;
 
                 cout << "2.\n";
-                maincun.print();
+                copy.print();
                 cout << endl;
 
                 cout << "3.\n";
