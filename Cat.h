@@ -10,14 +10,24 @@ private:
     int age;
     string color;
     string behavior;
+    int data;
+
 
 public :
-    Cat() {
+    Cat() : data() {
         name = "Barsik";
         size = 23;
         age = 10;
         color = "White";
         behavior = "Playful";
+    }
+
+    Cat(const Cat &copy) : data(){
+        this->name = copy.name;
+        this->size = copy.size;
+        this->age = copy.age;
+        this->color = copy.color;
+        this->behavior = copy.behavior;
     }
 
     Cat(string name, int size, int age, string color, string behavior) : Cat() {
