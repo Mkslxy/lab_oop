@@ -119,34 +119,34 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lab_1_first_class.cpp",
+			"path" : "Dog.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lab_1_first_class.h",
+			"path" : "Dog.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lab_1_second_class.cpp",
+			"path" : "Cat.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lab_1_second_class.h",
+			"path" : "Cat.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lab_1_third_class.cpp",
+			"path" : "Rabbit.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "lab_1_third_class.h",
+			"path" : "Rabbit.h",
 			"sourceGroupIndex" : 1
 		}
 	],

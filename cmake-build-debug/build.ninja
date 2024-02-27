@@ -55,20 +55,20 @@ build CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj: CXX_COMPILER__lab_oop_2_lab_uns
   OBJECT_DIR = CMakeFiles\lab_oop_2_lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_oop_2_lab.dir
 
-build CMakeFiles/lab_oop_2_lab.dir/lab_1_first_class.cpp.obj: CXX_COMPILER__lab_oop_2_lab_unscanned_Debug D$:/lab_oop_2_lab/lab_1_first_class.cpp || cmake_object_order_depends_target_lab_oop_2_lab
-  DEP_FILE = CMakeFiles\lab_oop_2_lab.dir\lab_1_first_class.cpp.obj.d
+build CMakeFiles/lab_oop_2_lab.dir/Dog.cpp.obj: CXX_COMPILER__lab_oop_2_lab_unscanned_Debug D$:/lab_oop_2_lab/Dog.cpp || cmake_object_order_depends_target_lab_oop_2_lab
+  DEP_FILE = CMakeFiles\lab_oop_2_lab.dir\Dog.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\lab_oop_2_lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_oop_2_lab.dir
 
-build CMakeFiles/lab_oop_2_lab.dir/lab_1_second_class.cpp.obj: CXX_COMPILER__lab_oop_2_lab_unscanned_Debug D$:/lab_oop_2_lab/lab_1_second_class.cpp || cmake_object_order_depends_target_lab_oop_2_lab
-  DEP_FILE = CMakeFiles\lab_oop_2_lab.dir\lab_1_second_class.cpp.obj.d
+build CMakeFiles/lab_oop_2_lab.dir/Cat.cpp.obj: CXX_COMPILER__lab_oop_2_lab_unscanned_Debug D$:/lab_oop_2_lab/Cat.cpp || cmake_object_order_depends_target_lab_oop_2_lab
+  DEP_FILE = CMakeFiles\lab_oop_2_lab.dir\Cat.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\lab_oop_2_lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_oop_2_lab.dir
 
-build CMakeFiles/lab_oop_2_lab.dir/lab_1_third_class.cpp.obj: CXX_COMPILER__lab_oop_2_lab_unscanned_Debug D$:/lab_oop_2_lab/lab_1_third_class.cpp || cmake_object_order_depends_target_lab_oop_2_lab
-  DEP_FILE = CMakeFiles\lab_oop_2_lab.dir\lab_1_third_class.cpp.obj.d
+build CMakeFiles/lab_oop_2_lab.dir/Rabbit.cpp.obj: CXX_COMPILER__lab_oop_2_lab_unscanned_Debug D$:/lab_oop_2_lab/Rabbit.cpp || cmake_object_order_depends_target_lab_oop_2_lab
+  DEP_FILE = CMakeFiles\lab_oop_2_lab.dir\Rabbit.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\lab_oop_2_lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab_oop_2_lab.dir
@@ -81,7 +81,7 @@ build CMakeFiles/lab_oop_2_lab.dir/lab_1_third_class.cpp.obj: CXX_COMPILER__lab_
 #############################################
 # Link the executable lab_oop_2_lab.exe
 
-build lab_oop_2_lab.exe: CXX_EXECUTABLE_LINKER__lab_oop_2_lab_Debug CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj CMakeFiles/lab_oop_2_lab.dir/lab_1_first_class.cpp.obj CMakeFiles/lab_oop_2_lab.dir/lab_1_second_class.cpp.obj CMakeFiles/lab_oop_2_lab.dir/lab_1_third_class.cpp.obj
+build lab_oop_2_lab.exe: CXX_EXECUTABLE_LINKER__lab_oop_2_lab_Debug CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj CMakeFiles/lab_oop_2_lab.dir/Dog.cpp.obj CMakeFiles/lab_oop_2_lab.dir/Cat.cpp.obj CMakeFiles/lab_oop_2_lab.dir/Rabbit.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab_oop_2_lab.dir
