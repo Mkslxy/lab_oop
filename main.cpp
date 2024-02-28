@@ -5,6 +5,8 @@
 
 using namespace std;
 
+   string Rabbit::behavior = "Playful";
+
 
 int main() {
     Dog doberman("Sonya", 68, 3, "Black", "Calm and playful");
@@ -20,22 +22,22 @@ int main() {
 
     Cat special_cat(" Antonio ", 24, 11, " White ", "Playful and aggressive");
 
-    Rabbit special_rabbit(" Vitya ", 20, 1, " White ", "Playful and aggressive");
+    Rabbit special_rabbit(" Vitya ", 20, 1, " White ");
 
-    Rabbit common_rabbit(" Kostya ", 20, 1, " White ", "Playful and aggressive");
+    Rabbit common_rabbit(" Kostya ", 20, 1, " White ");
 
-    Rabbit middle_rabbit(" Avitos ", 20, 1, " White ", "Playful and aggressive");
+    Rabbit middle_rabbit(" Avitos ", 20, 1, " White ");
 
     int choice;
 
     do {
-    cout << " Please choose which animal you want take in your house \n";
-    cout << " 1. DOG \n";
-    cout << " 2. CAT \n";
-    cout << " 3. RABBIT \n";
-    cout << " 4. EXIT \n";
+        cout << " Please choose which animal you want take in your house \n";
+        cout << " 1. DOG \n";
+        cout << " 2. CAT \n";
+        cout << " 3. RABBIT \n";
+        cout << " 4. EXIT \n";
 
-    cin >> choice;
+        cin >> choice;
 
         switch (choice) {
             case 1 :
@@ -137,11 +139,14 @@ int main() {
                 cout << endl;
 
                 cout << "2.\n";
+                Rabbit::setBehavior("Calm");
                 common_rabbit.print();
                 cout << endl;
 
                 cout << "3.\n";
+                Rabbit::setBehavior("Running");
                 middle_rabbit.print();
+
                 cout << endl;
 
                 cin >> choice4;
@@ -166,6 +171,6 @@ int main() {
                 break;
 
         }
-    }while (choice != 4);
+    } while (choice != 4);
     return 0;
 }

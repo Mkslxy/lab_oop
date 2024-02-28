@@ -14,8 +14,7 @@ private:
 public:
 
 
-
-    Dog()  {
+    Dog() {
         name = "";
         size = 0;
         age = 0;
@@ -23,7 +22,7 @@ public:
         behavior = "";
     }
 
-    Dog(string name, int size, int age, string color, string behavior)  {
+    Dog(string name, int size, int age, string color, string behavior) {
         this->name = name;
         this->size = size;
         this->age = age;
@@ -31,11 +30,11 @@ public:
         this->behavior = behavior;
     }
 
-    Dog( Dog&& other) : name(other.name),
-                        size(other.size),
-                        age(other.age),
-                        color(other.color),
-                        behavior(other.behavior){}
+    Dog(Dog &&other) : name(other.name),
+                       size(other.size),
+                       age(other.age),
+                       color(other.color),
+                       behavior(other.behavior) {}
 
     void print() {
         cout << "Name = " << name << "\n"

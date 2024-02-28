@@ -22,7 +22,7 @@ public :
         behavior = "Playful";
     }
 
-    Cat(const Cat &copy) : data(){
+    Cat(const Cat &copy) : data() {
         this->name = copy.name;
         this->size = copy.size;
         this->age = copy.age;
