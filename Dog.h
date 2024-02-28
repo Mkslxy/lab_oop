@@ -13,15 +13,6 @@ private:
 
 public:
 
-
-    Dog() {
-        name = "";
-        size = 0;
-        age = 0;
-        color = "";
-        behavior = "";
-    }
-
     Dog(string name, int size, int age, string color, string behavior) {
         this->name = name;
         this->size = size;
