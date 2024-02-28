@@ -12,7 +12,10 @@ private:
     string behavior;
 
 public:
-    Dog() {
+
+
+
+    Dog()  {
         name = "";
         size = 0;
         age = 0;
@@ -20,13 +23,19 @@ public:
         behavior = "";
     }
 
-    Dog(string name, int size, int age, string color, string behavior) {
+    Dog(string name, int size, int age, string color, string behavior)  {
         this->name = name;
         this->size = size;
         this->age = age;
         this->color = color;
         this->behavior = behavior;
     }
+
+    Dog( Dog&& other) : name(other.name),
+                        size(other.size),
+                        age(other.age),
+                        color(other.color),
+                        behavior(other.behavior){}
 
     void print() {
         cout << "Name = " << name << "\n"
@@ -35,4 +44,22 @@ public:
              << "Color = " << color << "\n"
              << "Behavior = " << behavior << "\n";
     }
+
+    const string &getName() const {
+        return name;
+    }
+
+    int getSize() const {
+        return size;
+    }
+
+    void setName(const string &name) {
+        Dog::name = name;
+    }
+
+    void setSize(int size) {
+        Dog::size = size;
+    }
+
+
 };
