@@ -14,7 +14,7 @@ int main() {
     Dog &other = german_shepherd;
 
 
-    Cat common_cat(" Vasil ", 25, 10, " White ", "Playful ");
+    const Cat common_cat(" Vasil ", 25, 10, " White ", "Playful ");
 
     Cat copy = common_cat;
 
