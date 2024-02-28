@@ -7,7 +7,6 @@ using namespace std;
 
    string Rabbit::behavior = "Playful";
 
-
 int main() {
     Dog doberman("Sonya", 68, 3, "Black", "Calm and playful");
 
@@ -17,6 +16,8 @@ int main() {
 
 
     const Cat common_cat(" Vasil ", 25, 10, " White ", "Playful ");
+
+    //Cat::setName("Barsiana");
 
     Cat copy = common_cat;
 
