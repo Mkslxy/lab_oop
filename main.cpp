@@ -11,7 +11,8 @@ int main() {
 
     Dog german_shepherd("Sergei", 70, 2, "Black and White", " Energic and playful");
 
-    Dog siberian_husky(" Haski ", 68, 5, " White ", "Playful and aggressive");
+    Dog &other = german_shepherd;
+
 
     Cat common_cat(" Vasil ", 25, 10, " White ", "Playful ");
 
@@ -51,7 +52,17 @@ int main() {
                 cout << endl;
 
                 cout << "3.\n";
-                siberian_husky.print();
+
+                german_shepherd.getName();
+                german_shepherd.setName("Vasiliy");
+
+                german_shepherd.getSize();
+                german_shepherd.setSize(62);
+
+                other.print();
+
+                //siberian_husky.print();
+
                 cout << endl;
 
                 int choice2;
