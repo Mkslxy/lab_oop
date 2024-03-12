@@ -13,7 +13,7 @@ public:
     int height;
 };
 
-class SavingAccount : public Person {
+class Employee : public Person {
 public:
     void Anton() {
         name = "Anton";
