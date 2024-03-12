@@ -1,5 +1,5 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -12,20 +12,11 @@ private:
     string behavior;
 
 public:
+    Dog(string name, int size, int age, string color, string behavior)
+            : name(name), size(size), age(age), color(color), behavior(behavior) {}
 
-    Dog(string name, int size, int age, string color, string behavior) {
-        this->name = name;
-        this->size = size;
-        this->age = age;
-        this->color = color;
-        this->behavior = behavior;
-    }
-
-    Dog(Dog &&other) : name(other.name),
-                       size(other.size),
-                       age(other.age),
-                       color(other.color),
-                       behavior(other.behavior) {}
+    Dog(Dog&& other)
+            : name(move(other.name)), size(other.size), age(other.age), color(move(other.color)), behavior(move(other.behavior)) {}
 
     void print() {
         cout << "Name = " << name << "\n"
@@ -35,21 +26,19 @@ public:
              << "Behavior = " << behavior << "\n";
     }
 
-    const string &getName() const {
+    const string& getName()  {
         return name;
     }
 
-    int getSize() const {
+    const int getSize()  {
         return size;
     }
 
-    void setName(const string &name) {
-        Dog::name = name;
+    void setName(const string& name) {
+        this->name = name;
     }
 
     void setSize(int size) {
-        Dog::size = size;
+        this->size = size;
     }
-
-
 };
