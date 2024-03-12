@@ -2,6 +2,7 @@
 #include "Dog.h"
 #include "Cat.h"
 #include "Rabbit.h"
+#include "Employee.h"
 
 using namespace std;
 
