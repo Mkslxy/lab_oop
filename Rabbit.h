@@ -1,6 +1,7 @@
-#include<iostream>
-using namespace std;
+#include <iostream>
+#include <string>
 
+using namespace std;
 
 class Rabbit {
 private:
@@ -10,24 +11,21 @@ private:
     string color;
     static string behavior;
 
-public :
-    Rabbit(string name , int size , int age , string color){
-        this->name = name;
-        this->size = size;
-        this->age = age;
-        this->color = color;
-    }
-    ~Rabbit() {
+public:
+    Rabbit(string name, int size, int age, string color)
+            : name(name), size(size), age(age), color(color) {}
 
-    }
+    ~Rabbit() {}
 
     void print() {
-        cout << "Name = " << name << "\n" << "Size = " << size << "\n" << "Age = " << age << "\n" << "Color = " << color
-             << "\n" << "Behavior = " << behavior << "\n";
+        cout << "Name = " << name << "\n"
+             << "Size = " << size << "\n"
+             << "Age = " << age << "\n"
+             << "Color = " << color << "\n"
+             << "Behavior = " << behavior << "\n";
     }
 
-    static void setBehavior( string newBehavior){
-    behavior = newBehavior;
-};
-
+    static void setBehavior(string newBehavior) {
+        behavior = newBehavior;
+    };
 };
