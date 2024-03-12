@@ -104,7 +104,10 @@
 			[
 				2,
 				4,
-				6
+				6,
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -147,6 +150,21 @@
 		{
 			"backtrace" : 1,
 			"path" : "Rabbit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Employee.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "buyer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cashbox.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -9,4 +9,7 @@ add_executable(lab_oop_2_lab main.cpp
         Cat.cpp
         Cat.h
         Rabbit.cpp
-        Rabbit.h)
+        Rabbit.h
+        Employee.h
+        buyer.h
+        cashbox.h)
