@@ -3,12 +3,21 @@
 
 using namespace std;
 
-class Person {
-private:
-   int balance;
-   int income;
+class Cash {
+public:
+    int balance;
+    int income;
 };
 
-class cash {
+class Till : public Cash {
+public:
+    void cashbox() {
+        balance = 15000;
+        income = 5000;
+    }
 
+    void print() {
+        cout << "Balance = " << balance << ".\n" << "Income today = " << income << ".\n";
+    }
 };
+

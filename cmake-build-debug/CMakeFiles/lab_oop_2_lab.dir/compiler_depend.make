@@ -614,7 +614,9 @@ CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj: F:/lab_oop_4/main.cpp \
   F:/lab_oop_4/Cat.h \
   F:/lab_oop_4/Dog.h \
   F:/lab_oop_4/Employee.h \
-  F:/lab_oop_4/Rabbit.h
+  F:/lab_oop_4/Rabbit.h \
+  F:/lab_oop_4/buyer.h \
+  F:/lab_oop_4/cashbox.h
 
 
 F:/lab_oop_4/Cat.cpp:
@@ -650,6 +652,8 @@ F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/inc
 F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc:
 
 F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h:
+
+F:/lab_oop_4/cashbox.h:
 
 F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc:
 
@@ -802,6 +806,8 @@ F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/inc
 F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list:
 
 F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:
+
+F:/lab_oop_4/buyer.h:
 
 F:/program_files/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd:
 

@@ -4,6 +4,9 @@
 #include "Rabbit.h"
 #include "Employee.h"
 #include "buyer.h"
+#include "cashbox.h"
+
+
 using namespace std;
 
 string Rabbit::behavior = "Playful";
@@ -45,7 +48,8 @@ int main() {
         cout << " 3. RABBIT \n";
         cout << " 4. OUR EMPLOYEES\n";
         cout << " 5. BUYERS\n";
-        cout << " 6. EXIT \n";
+        cout << " 6. YOUR CASHBOX\n";
+        cout << " 7. EXIT \n";
 
         cin >> choice;
 
@@ -197,7 +201,15 @@ int main() {
                 Buyer.Print();
                 cout << endl;
                     break;
+
+            case 6:
+                Till cashbox;
+                cashbox.cashbox();
+                cashbox.print();
+                cout << endl;
+                    break;
+
         }
-    } while (choice != 6);
+    } while (choice != 7);
     return 0;
 }
