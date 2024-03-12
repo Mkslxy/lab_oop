@@ -9,6 +9,6 @@ private:
    int income;
 };
 
-class cash : private Person {
+class cash {
 
 };

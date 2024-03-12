@@ -6,7 +6,7 @@
 
 using namespace std;
 
-   string Rabbit::behavior = "Playful";
+string Rabbit::behavior = "Playful";
 
 int main() {
     Dog doberman("Sonya", 68, 3, "Black", "Calm and playful");
@@ -15,10 +15,8 @@ int main() {
 
     Dog &other = german_shepherd;
 
-
     const Cat common_cat(" Vasil ", 25, 10, " White ", "Playful ");
 
-    //Cat::setName("Barsiana");
 
     Cat copy = common_cat;
 
@@ -30,6 +28,8 @@ int main() {
 
     Rabbit middle_rabbit(" Avitos ", 20, 1, " White ");
 
+    SavingAccount first_employee;
+
     int choice;
 
     do {
@@ -37,7 +37,8 @@ int main() {
         cout << " 1. DOG \n";
         cout << " 2. CAT \n";
         cout << " 3. RABBIT \n";
-        cout << " 4. EXIT \n";
+        cout << " 4. OUR EMPLOYEES\n";
+        cout << " 5. EXIT \n";
 
         cin >> choice;
 
@@ -171,8 +172,12 @@ int main() {
                         break;
                 }
                 break;
-
+            case 4:
+                first_employee.Anton();
+                first_employee.Print();
+                cout << endl;
+                    break;
         }
-    } while (choice != 4);
+    } while (choice != 5);
     return 0;
 }

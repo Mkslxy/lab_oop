@@ -13,6 +13,6 @@ private:
     int money;
 };
 
-class SavingAccounts : private Person {
+class SavingAccount  {
 
 };
