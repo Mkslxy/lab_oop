@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Person{
+class Person {
 private:
     string name;
     int age;
@@ -13,6 +13,6 @@ private:
     int money;
 };
 
-class SavingAccounts: Person{
+class SavingAccounts : private Person {
 
 };

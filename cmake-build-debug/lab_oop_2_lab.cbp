@@ -106,6 +106,9 @@
 		<Unit filename="F:/lab_oop_4/buyer.h">
 			<Option target="lab_oop_2_lab"/>
 		</Unit>
+		<Unit filename="F:/lab_oop_4/cashbox.h">
+			<Option target="lab_oop_2_lab"/>
+		</Unit>
 		<Unit filename="F:/lab_oop_4/main.cpp">
 			<Option target="lab_oop_2_lab"/>
 		</Unit>

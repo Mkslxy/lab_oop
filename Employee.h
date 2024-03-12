@@ -14,6 +14,6 @@ public:
     int balance;
 };
 
-class SavingAccounts: Person{
+class SavingAccounts: public Person{
 
 };
