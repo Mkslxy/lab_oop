@@ -3,7 +3,7 @@
 #include "Cat.h"
 #include "Rabbit.h"
 #include "Employee.h"
-
+#include "buyer.h"
 using namespace std;
 
 string Rabbit::behavior = "Playful";
@@ -28,11 +28,13 @@ int main() {
 
     Rabbit middle_rabbit(" Avitos ", 20, 1, " White ");
 
-    SavingAccount first_employee;
+    Employee first_employee;
 
-    SavingAccount second_emloyee;
+    Employee second_emloyee;
 
-    SavingAccount third_employee;
+    Employee third_employee;
+
+    Person1 Buyer(" Bogdan", 11, "Black", " Volk" , "+380687537355" ,Account( 543981272 , 2000));
 
     int choice;
 
@@ -42,7 +44,8 @@ int main() {
         cout << " 2. CAT \n";
         cout << " 3. RABBIT \n";
         cout << " 4. OUR EMPLOYEES\n";
-        cout << " 5. EXIT \n";
+        cout << " 5. BUYERS\n";
+        cout << " 6. EXIT \n";
 
         cin >> choice;
 
@@ -189,7 +192,12 @@ int main() {
                 third_employee.Print();
                 cout << endl;
                 break;
+
+            case 5:
+                Buyer.Print();
+                cout << endl;
+                    break;
         }
-    } while (choice != 5);
+    } while (choice != 6);
     return 0;
 }
