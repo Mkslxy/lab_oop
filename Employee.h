@@ -24,6 +24,24 @@ public:
         height = 187;
     }
 
+    void Masha(){
+        name = "Masha";
+        age = 19;
+        rank = "Intern";
+        hair = "White";
+        surname = "Filakovska";
+        height = 169;
+    }
+
+    void Natasha(){
+        name = "Natasha";
+        age = 18;
+        rank = "Manager";
+        hair = "Red";
+        surname = "Petsentii";
+        height = 163;
+    }
+
     void Print() {
         cout << "Name = " << name << ".\n" << "Age = " << age << ".\n" << "Rank = " << rank << ".\n" << "Hair = "
              << hair << ".\n" << "Surname = " << surname << ".\n" << "Height = " << height << ".\n" ;

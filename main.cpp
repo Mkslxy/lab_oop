@@ -30,6 +30,10 @@ int main() {
 
     SavingAccount first_employee;
 
+    SavingAccount second_emloyee;
+
+    SavingAccount third_employee;
+
     int choice;
 
     do {
@@ -176,7 +180,15 @@ int main() {
                 first_employee.Anton();
                 first_employee.Print();
                 cout << endl;
-                    break;
+
+                second_emloyee.Masha();
+                second_emloyee.Print();
+                cout << endl;
+
+                third_employee.Masha();
+                third_employee.Print();
+                cout << endl;
+                break;
         }
     } while (choice != 5);
     return 0;
