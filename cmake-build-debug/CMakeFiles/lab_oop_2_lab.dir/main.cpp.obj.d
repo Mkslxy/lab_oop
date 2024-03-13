@@ -150,4 +150,5 @@ CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj: D:\lab_oop4\main.cpp \
  D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
  D:\lab_oop4\Dog.h D:\lab_oop4\Cat.h D:\lab_oop4\Rabbit.h \
- D:\lab_oop4\Employee.h D:\lab_oop4\buyer.h D:\lab_oop4\cashbox.h
+ D:\lab_oop4\Employee.h D:\lab_oop4\Human.h D:\lab_oop4\Buyer.h \
+ D:\lab_oop4\Account.h D:\lab_oop4\Till.h D:\lab_oop4\Cash.h

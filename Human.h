@@ -11,6 +11,8 @@ protected:
     string surname;
     int height;
 public:
+    Human() = default;
+
     Human(const Human &other)
             : name(other.name), age(other.age), rank(other.rank), hair(other.hair), surname(other.surname),
               height(other.height){}
