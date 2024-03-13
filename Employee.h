@@ -1,20 +1,19 @@
 #include <iostream>
-
+#include "Human.h"
 
 using namespace std;
 
-class Person {
+class Employee : public Human {
+    string location;
 public:
-    string name;
-    int age;
-    string rank;
-    string hair;
-    string surname;
-    int height;
-};
 
-class Employee : public Person {
-public:
+    Employee() = default;
+
+    Employee(const Employee& other)
+    : Human(other), location(other.location){
+
+    }
+
     void Anton() {
         name = "Anton";
         age = 25;

@@ -11,5 +11,8 @@ add_executable(lab_oop_2_lab main.cpp
         Rabbit.cpp
         Rabbit.h
         Employee.h
-        buyer.h
-        cashbox.h)
+        Buyer.h
+        Till.h
+        Account.h
+        Human.h
+        Cash.h)

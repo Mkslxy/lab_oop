@@ -3,8 +3,8 @@
 #include "Cat.h"
 #include "Rabbit.h"
 #include "Employee.h"
-#include "buyer.h"
-#include "cashbox.h"
+#include "Buyer.h"
+#include "Till.h"
 
 
 using namespace std;
@@ -37,7 +37,7 @@ int main() {
 
     Employee third_employee;
 
-    Person1 Buyer(" Bogdan", 11, "Black", " Volk" , "+380687537355" ,Account( 543981272 , 2000));
+    Buyer Buyer(" Bogdan", 11, "Black", " Volk", "+380687537355", Account(543981272, 2000));
 
     int choice;
 
@@ -200,16 +200,16 @@ int main() {
             case 5:
                 Buyer.Print();
                 cout << endl;
-                    break;
+                break;
 
             case 6:
                 Till cashbox;
                 cashbox.cashbox();
                 cashbox.print();
                 cout << endl;
-                    break;
+                break;
 
         }
-    } while (choice != 7);
+    }while (choice != 7);
     return 0;
 }
