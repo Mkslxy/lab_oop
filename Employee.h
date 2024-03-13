@@ -21,6 +21,7 @@ public:
         hair = "Black";
         surname = "Vitasov";
         height = 187;
+        location = "";
     }
 
     void Masha(){
@@ -30,6 +31,7 @@ public:
         hair = "White";
         surname = "Filakovska";
         height = 169;
+        location = "";
     }
 
     void Natasha(){
