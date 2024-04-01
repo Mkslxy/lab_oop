@@ -1,9 +1,10 @@
 #include <iostream>
 #include "Account.h"
+#include "Cash.h"
 
 using namespace std;
 
-class Buyer {
+class Buyer : public Cash {
 private:
     Account account;
     string name;
@@ -11,8 +12,8 @@ private:
     string hair;
     string surname;
     string phone_number;
-
 public:
+
     Buyer(string name, int age, string hair, string surname, string phone_number, Account account)
             : name(name), age(age), surname(surname), hair(hair), phone_number(phone_number), account(account) {}
 

@@ -2,15 +2,13 @@
 
 using namespace std;
 
-class Account {
-private:
+class Account{
+protected:
     int id;
     int balance;
 
 public:
-    Account(int id, int balance) : id(id), balance(balance) {
-
-    };
+    Account(int id, int balance) : id(id), balance(balance) {}
 
     int getId() const {
         return id;
@@ -19,4 +17,14 @@ public:
     int getBalance() const {
         return balance;
     }
+
+    virtual void deposit(double amount) {
+        balance += amount;
+    }
+
+    virtual void withdraw(double amount) {
+        balance -= amount;
+    }
+
+    virtual ~Account() {}
 };

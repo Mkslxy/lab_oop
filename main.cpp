@@ -11,7 +11,10 @@ using namespace std;
 
 string Rabbit::behavior = "Playful";
 
+
 int main() {
+
+
     Dog doberman("Sonya", 68, 3, "Black", "Calm and playful");
 
     Dog german_shepherd("Sergei", 70, 2, "Black and White", " Energic and playful");
@@ -37,9 +40,18 @@ int main() {
 
     Employee third_employee;
 
-    Buyer Buyer(" Bogdan", 11, "Black", " Volk", "+380687537355", Account(543981272, 2000));
+    Cash *withdraw = new Cash();
 
-    int choice;
+    Cash *deposit = new Cash();
+
+    Buyer buyer(" Bogdan", 11, "Black", " Volk", "+380687537355", Account(543981272, 2000));
+
+    withdraw->withdraw(1000);
+    deposit->deposit(1000);
+
+    Cash *array[] ={ withdraw ,deposit};
+
+    int choice, choice2, choice3, choice4;
 
     do {
         cout << " Please choose which animal you want take in your house \n";
@@ -48,7 +60,7 @@ int main() {
         cout << " 3. RABBIT \n";
         cout << " 4. OUR EMPLOYEES\n";
         cout << " 5. BUYERS\n";
-        cout << " 6. YOUR CASHBOX\n";
+        cout << " 6. YOUR CASHBOX | NEWS\n";
         cout << " 7. EXIT \n";
 
         cin >> choice;
@@ -69,19 +81,17 @@ int main() {
 
                 cout << "3.\n";
 
-                german_shepherd.getName();
-                german_shepherd.setName("Vasiliy");
+                other.getName();
+                other.setName("Vasiliy");
 
-                german_shepherd.getSize();
-                german_shepherd.setSize(62);
+                other.getSize();
+                other.setSize(62);
 
                 other.print();
 
                 //siberian_husky.print();
 
                 cout << endl;
-
-                int choice2;
 
                 cin >> choice2;
                 switch (choice2) {
@@ -105,8 +115,6 @@ int main() {
 
             case 2:
                 cout << "Which one you want to pick ?\n";
-
-                int choice3;
 
                 cout << "1.\n";
                 Cat().print();
@@ -145,8 +153,6 @@ int main() {
                 cout << " Which one you want to pick up ?\n";
 
                 cout << endl;
-
-                int choice4;
 
                 cout << "1.\n";
                 special_rabbit.print();
@@ -198,7 +204,8 @@ int main() {
                 break;
 
             case 5:
-                Buyer.Print();
+                buyer.Print();
+                cout << endl;
                 cout << endl;
                 break;
 
@@ -222,5 +229,6 @@ int main() {
 
         }
     } while (choice != 7);
+    delete[] &array;
     return 0;
 }

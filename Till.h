@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Cash.h"
 
 using namespace std;
 
