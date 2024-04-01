@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/lab_oop4/cmake-build-debug",
-		"source" : "D:/lab_oop4"
+		"build" : "F:/oop_5/lab_oop/cmake-build-debug",
+		"source" : "F:/oop_5/lab_oop"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 6
 	}
 }
