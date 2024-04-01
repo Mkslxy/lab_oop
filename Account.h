@@ -8,7 +8,7 @@ protected:
     int balance;
     int acc;
 public:
-    Account(int id, int balance) : id(id), balance(balance) {}
+    Account(int id, int balance) : id(0), balance(0) {}
 
     Account(int acc ) : acc(acc){}
 
