@@ -40,11 +40,19 @@ int main() {
 
     Employee third_employee;
 
+    Buyer buyer(" Bogdan", 11, "Black", " Volk", "+380687537355", Account(543981272, 2000));
+
     Cash *withdraw = new Cash();
 
     Cash *deposit = new Cash();
 
-    Buyer buyer(" Bogdan", 11, "Black", " Volk", "+380687537355", Account(543981272, 2000));
+    Account acc{100};
+    Account &aRef = acc;
+    aRef.withdraw(50);
+
+    Cash sAss{200};
+    Account &sRef = sAss;
+    sRef.withdraw(150);
 
     withdraw->withdraw(1000);
     deposit->deposit(1000);
@@ -229,6 +237,8 @@ int main() {
 
         }
     } while (choice != 7);
+
+
     delete[] &array;
     return 0;
 }

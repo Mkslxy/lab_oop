@@ -85,6 +85,9 @@
 		<Unit filename="F:/oop_5/lab_oop/Account.h">
 			<Option target="lab_oop_2_lab"/>
 		</Unit>
+		<Unit filename="F:/oop_5/lab_oop/Animal.h">
+			<Option target="lab_oop_2_lab"/>
+		</Unit>
 		<Unit filename="F:/oop_5/lab_oop/Bank.h">
 			<Option target="lab_oop_2_lab"/>
 		</Unit>

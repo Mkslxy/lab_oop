@@ -16,4 +16,5 @@ add_executable(lab_oop_2_lab main.cpp
         Account.h
         Human.h
         Cash.h
-        Bank.h)
+        Bank.h
+        Animal.h)

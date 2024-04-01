@@ -6,9 +6,11 @@ class Account{
 protected:
     int id;
     int balance;
-
+    int acc;
 public:
     Account(int id, int balance) : id(id), balance(balance) {}
+
+    Account(int acc ) : acc(acc){}
 
     int getId() const {
         return id;
@@ -25,6 +27,7 @@ public:
     virtual void withdraw(double amount) {
         balance -= amount;
     }
+
 
     virtual ~Account() {}
 };
