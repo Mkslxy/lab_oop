@@ -11,6 +11,11 @@ protected:
     string surname;
     int height;
 public:
+
+    void doSomeStuff(){
+        cout << " Doing something\n";
+    }
+
     Human() = default;
 
     Human(const Human &other)

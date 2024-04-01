@@ -207,9 +207,20 @@ int main() {
                 cashbox.cashbox();
                 cashbox.print();
                 cout << endl;
+
+                Human stufff;
+                Employee second_stuff;
+
+                stufff.doSomeStuff();
+                second_stuff.doSomeStuff();
+
+                Human *pb = new Employee;
+                pb->doSomeStuff();
+
+                cout << endl;
                 break;
 
         }
-    }while (choice != 7);
+    } while (choice != 7);
     return 0;
 }

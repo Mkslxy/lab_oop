@@ -7,6 +7,10 @@ class Employee : public Human {
     string location;
 public:
 
+    void doSomeStuff(){
+        cout << " Doing something\n";
+    }
+
     Employee() = default;
 
     Employee(const Employee& other)
