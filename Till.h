@@ -3,9 +3,9 @@
 using namespace std;
 
 
-class Till : public Cash {
+class Till : public Balance {
 public:
-    Till() : Cash() {
+    Till() : Balance() {
     }
 
     ~Till(){

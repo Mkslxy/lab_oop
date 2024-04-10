@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab_oop_2_lab::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab_oop_2_lab-Debug-821c8fef2ab85e20a2ca.json",
+					"jsonFile" : "target-lab_oop_2_lab-Debug-6e297bebfeeee3b461fc.json",
 					"name" : "lab_oop_2_lab",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "F:/oop_5/lab_oop/cmake-build-debug",
-		"source" : "F:/oop_5/lab_oop"
+		"build" : "D:/oop_4_5/lab_oop/cmake-build-debug",
+		"source" : "D:/oop_4_5/lab_oop"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 5
 	}
 }

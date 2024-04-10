@@ -110,9 +110,7 @@
 				9,
 				10,
 				11,
-				12,
-				13,
-				14
+				12
 			]
 		}
 	],
@@ -184,17 +182,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Cash.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Bank.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Animal.h",
+			"path" : "Balance.h",
 			"sourceGroupIndex" : 1
 		}
 	],

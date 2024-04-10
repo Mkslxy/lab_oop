@@ -42,22 +42,22 @@ int main() {
 
     Buyer buyer(" Bogdan", 11, "Black", " Volk", "+380687537355", Account(543981272, 2000));
 
-    Cash *withdraw = new Cash();
+    Balance *withdraw = new Balance();
 
-    Cash *deposit = new Cash();
+    Balance *deposit = new Balance();
 
     Account acc{100};
     Account &aRef = acc;
     aRef.withdraw(50);
 
-    Cash sAss{200};
+    Balance sAss{200};
     Account &sRef = sAss;
     sRef.withdraw(150);
 
     withdraw->withdraw(1000);
     deposit->deposit(1000);
 
-    Cash *array[] ={ withdraw ,deposit};
+    Balance *array[] ={withdraw , deposit};
 
     int choice, choice2, choice3, choice4;
 

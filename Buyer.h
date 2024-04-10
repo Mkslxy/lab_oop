@@ -1,10 +1,10 @@
 #include <iostream>
 #include "Account.h"
-#include "Cash.h"
+#include "Balance.h"
 
 using namespace std;
 
-class Buyer : public Cash {
+class Buyer : public Balance {
 private:
     Account account;
     string name;
