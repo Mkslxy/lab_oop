@@ -68,7 +68,6 @@ int main() {
             cout << "Invalid password! Please enter 0 or 1." << endl;
         }
     } while (password != 0 && password != 1);
-
     if (password == 1){
         do {
             cout << " Please choose which animal you want take in your house \n";
