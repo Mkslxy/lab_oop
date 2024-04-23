@@ -1,15 +1,21 @@
 #include <iostream>
+#include <memory>
 #include "Dog.h"
 #include "Cat.h"
 #include "Rabbit.h"
 #include "Employee.h"
 #include "Buyer.h"
 #include "Till.h"
-
-
+#include "UpdateInformation.h"
+#include "AddProduct.h"
 using namespace std;
 
 string Rabbit::behavior = "Playful";
+
+void addProduct() {
+
+    cout << "Product added successfully!" << endl;
+}
 
 
 int main() {
@@ -22,7 +28,6 @@ int main() {
     Dog &other = german_shepherd;
 
     const Cat common_cat(" Vasil ", 25, 10, " White ", "Playful ");
-
 
     Cat copy = common_cat;
 
@@ -58,6 +63,16 @@ int main() {
     deposit->deposit(1000);
 
     Balance *array[] ={withdraw , deposit};
+
+    shared_ptr<UpdateInformation> pCashbox = make_shared<UpdateInformation>(15000, 500);
+
+    shared_ptr<AddProduct> pDog = make_shared<AddProduct>("Aswa", 50, 1, "White with pink", "Calm and aggressive");
+
+    Human stufff;
+    Employee second_stuff;
+
+    Human *pb = new Employee;
+
 
     int choice, choice2, choice3, choice4;
     int password;
@@ -214,7 +229,9 @@ int main() {
             cout << " 4. OUR EMPLOYEES\n";
             cout << " 5. BUYERS\n";
             cout << " 6. YOUR CASHBOX | NEWS\n";
-            cout << " 7. EXIT \n";
+            cout << " 7. UPDATING INFORMATION \n";
+            cout << " 8. ADDING THE PRODUCT \n";
+            cout << " 9. EXIT \n";
 
             cin >> choice;
 
@@ -242,10 +259,16 @@ int main() {
 
                     other.print();
 
-                    //siberian_husky.print();
-
                     cout << endl;
 
+                    if (!pDog){
+
+                    }else{
+                        pDog->print();
+                    }
+
+
+                    cout << endl;
                     cin >> choice2;
                     switch (choice2) {
                         case 1 :
@@ -363,25 +386,27 @@ int main() {
                     break;
 
                 case 6:
-                    Till cashbox;
-                    cashbox.cashbox();
-                    cashbox.print();
+                    pCashbox->print();
                     cout << endl;
-
-                    Human stufff;
-                    Employee second_stuff;
 
                     stufff.doSomeStuff();
                     second_stuff.doSomeStuff();
 
-                    Human *pb = new Employee;
                     pb->doSomeStuff();
 
                     cout << endl;
                     break;
 
+                case 7: {
+                    pCashbox->setIncome(100);
+                    break;
+                }
+                case 8:
+
+                    break;
+
             }
-        } while (choice != 7);
+        } while (choice != 9);
     }
 
     delete[] &array;

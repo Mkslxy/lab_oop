@@ -112,7 +112,9 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16
 			]
 		}
 	],
@@ -195,6 +197,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "User.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "UpdateInformation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "AddProduct.h",
 			"sourceGroupIndex" : 1
 		}
 	],

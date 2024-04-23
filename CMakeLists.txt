@@ -17,4 +17,6 @@ add_executable(lab_oop_2_lab main.cpp
         Human.h
         Balance.h
         Administration.h
-        User.h)
+        User.h
+        UpdateInformation.h
+        AddProduct.h)

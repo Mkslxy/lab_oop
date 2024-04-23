@@ -85,6 +85,9 @@
 		<Unit filename="D:/oop_4_5/lab_oop/Account.h">
 			<Option target="lab_oop_2_lab"/>
 		</Unit>
+		<Unit filename="D:/oop_4_5/lab_oop/AddProduct.h">
+			<Option target="lab_oop_2_lab"/>
+		</Unit>
 		<Unit filename="D:/oop_4_5/lab_oop/Administration.h">
 			<Option target="lab_oop_2_lab"/>
 		</Unit>
@@ -119,6 +122,9 @@
 			<Option target="lab_oop_2_lab"/>
 		</Unit>
 		<Unit filename="D:/oop_4_5/lab_oop/Till.h">
+			<Option target="lab_oop_2_lab"/>
+		</Unit>
+		<Unit filename="D:/oop_4_5/lab_oop/UpdateInformation.h">
 			<Option target="lab_oop_2_lab"/>
 		</Unit>
 		<Unit filename="D:/oop_4_5/lab_oop/User.h">
