@@ -15,4 +15,6 @@ add_executable(lab_oop_2_lab main.cpp
         Till.h
         Account.h
         Human.h
-        Balance.h)
+        Balance.h
+        Administration.h
+        User.h)
