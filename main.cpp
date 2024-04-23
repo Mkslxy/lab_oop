@@ -77,6 +77,7 @@ int main() {
 
 
     int choice, choice2, choice3, choice4;
+
     int password;
     do {
         cout << "Please enter the password (0 or 1):" << endl;
@@ -87,158 +88,18 @@ int main() {
     } while (password != 0 && password != 1);
     if (password == 1) {
         do {
+
+            ofstream outFile("user_choice.txt", ios::app);
+            if (!outFile.is_open()) {
+                cerr << "Error: Unable to open user_choice.txt\n";
+                return 1;
+            }
+
             cout << " Please choose which animal you want take in your house \n";
             cout << " 1. DOG \n";
             cout << " 2. CAT \n";
             cout << " 3. RABBIT \n";
             cout << " 4. EXIT \n";
-
-            cin >> choice;
-
-            switch (choice) {
-                case 1 :
-
-                    cout << " Which one you want to take ?\n";
-                    cout << endl;
-
-                    cout << "1.\n";
-                    doberman.print();
-                    cout << endl;
-
-                    cout << "2.\n";
-                    german_shepherd.print();
-                    cout << endl;
-
-                    cout << "3.\n";
-
-                    other.getName();
-                    other.setName("Vasiliy");
-
-                    other.getSize();
-                    other.setSize(62);
-
-                    other.print();
-
-                    //siberian_husky.print();
-
-                    cout << endl;
-
-                    cin >> choice2;
-                    switch (choice2) {
-                        case 1 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        case 2 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        case 3 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        default:
-                            cout << " We don't have these Dog !\n";
-                            break;
-                    }
-                    break;
-
-                case 2:
-                    cout << "Which one you want to pick ?\n";
-
-                    cout << "1.\n";
-                    Cat().print();
-                    cout << endl;
-
-                    cout << "2.\n";
-                    copy.print();
-                    cout << endl;
-
-                    cout << "3.\n";
-                    special_cat.print();
-                    cout << endl;
-
-                    cin >> choice3;
-
-                    switch (choice3) {
-                        case 1 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        case 2 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        case 3 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        default:
-                            cout << " We don't have these Cat !\n";
-                            break;
-                    }
-                    break;
-
-                case 3:
-                    cout << " Which one you want to pick up ?\n";
-
-                    cout << endl;
-
-                    cout << "1.\n";
-                    special_rabbit.print();
-                    cout << endl;
-
-                    cout << "2.\n";
-                    Rabbit::setBehavior("Calm");
-                    common_rabbit.print();
-                    cout << endl;
-
-                    cout << "3.\n";
-                    Rabbit::setBehavior("Running");
-                    middle_rabbit.print();
-
-                    cout << endl;
-
-                    cin >> choice4;
-
-                    switch (choice4) {
-                        case 1 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        case 2 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        case 3 :
-                            cout << " Thanks for buying !\n";
-                            break;
-
-                        default:
-                            cout << " We don't have these Rabbit !\n";
-                            break;
-                    }
-                    break;
-            }
-        } while (choice != 4);
-
-    } else {
-        ofstream outFile("user_choice.txt", ios::app);
-        if (!outFile.is_open()) {
-            cerr << "Error: Unable to open user_choice.txt\n";
-            return 1;
-        }
-        do {
-            cout << " Please choose which animal you want take in your house \n";
-            cout << " 1. DOG \n";
-            cout << " 2. CAT \n";
-            cout << " 3. RABBIT \n";
-            cout << " 4. OUR EMPLOYEES\n";
-            cout << " 5. BUYERS\n";
-            cout << " 6. YOUR CASHBOX | NEWS\n";
-            cout << " 7. UPDATING INFORMATION \n";
-            cout << " 8. ADDING THE PRODUCT \n";
-            cout << " 9. EXIT \n";
 
             cin >> choice;
 
@@ -267,13 +128,6 @@ int main() {
                     other.print();
 
                     cout << endl;
-
-                    if (!pDog) {
-
-                    } else {
-                        pDog->print();
-                    }
-
 
                     cout << endl;
                     cin >> choice2;
@@ -374,8 +228,163 @@ int main() {
                             break;
                     }
                     break;
+            }
+        } while (choice != 4);
+
+    } else {
+        ofstream outFile("admin_choice.txt", ios::app);
+        if (!outFile.is_open()) {
+            cerr << "Error: Unable to open user_choice.txt\n";
+            return 1;
+        }
+        do {
+            cout << " Please choose which animal you want take in your house \n";
+            cout << " 1. DOG \n";
+            cout << " 2. CAT \n";
+            cout << " 3. RABBIT \n";
+            cout << " 4. OUR EMPLOYEES\n";
+            cout << " 5. BUYERS\n";
+            cout << " 6. YOUR CASHBOX | NEWS\n";
+            cout << " 7. UPDATING INFORMATION \n";
+            cout << " 8. ADDING THE PRODUCT \n";
+            cout << " 9. EXIT \n";
+
+            cin >> choice;
+
+            switch (choice) {
+                case 1 :
+                    outFile << "Admin selected option 1 - Take a dog\n";
+                    cout << " Which one you want to take ?\n";
+                    cout << endl;
+
+                    cout << "1.\n";
+                    doberman.print();
+                    cout << endl;
+
+                    cout << "2.\n";
+                    german_shepherd.print();
+                    cout << endl;
+
+                    cout << "3.\n";
+
+                    other.getName();
+                    other.setName("Vasiliy");
+
+                    other.getSize();
+                    other.setSize(62);
+
+                    other.print();
+
+                    cout << endl;
+
+                    if (!pDog) {
+
+                    } else {
+                        pDog->print();
+                    }
+
+
+                    cout << endl;
+                    cin >> choice2;
+                    switch (choice2) {
+                        case 1 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        case 2 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        case 3 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        default:
+                            cout << " We don't have these Dog !\n";
+                            break;
+                    }
+                    break;
+
+                case 2:
+                    outFile << "Admin selected option 2 - Take a cat\n";
+                    cout << "Which one you want to pick ?\n";
+
+                    cout << "1.\n";
+                    Cat().print();
+                    cout << endl;
+
+                    cout << "2.\n";
+                    copy.print();
+                    cout << endl;
+
+                    cout << "3.\n";
+                    special_cat.print();
+                    cout << endl;
+
+                    cin >> choice3;
+
+                    switch (choice3) {
+                        case 1 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        case 2 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        case 3 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        default:
+                            cout << " We don't have these Cat !\n";
+                            break;
+                    }
+                    break;
+
+                case 3:
+                    outFile << "Admin selected option 3 - Take a rabbit\n";
+                    cout << " Which one you want to pick up ?\n";
+
+                    cout << endl;
+
+                    cout << "1.\n";
+                    special_rabbit.print();
+                    cout << endl;
+
+                    cout << "2.\n";
+                    Rabbit::setBehavior("Calm");
+                    common_rabbit.print();
+                    cout << endl;
+
+                    cout << "3.\n";
+                    Rabbit::setBehavior("Running");
+                    middle_rabbit.print();
+
+                    cout << endl;
+
+                    cin >> choice4;
+
+                    switch (choice4) {
+                        case 1 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        case 2 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        case 3 :
+                            cout << " Thanks for buying !\n";
+                            break;
+
+                        default:
+                            cout << " We don't have these Rabbit !\n";
+                            break;
+                    }
+                    break;
                 case 4:
-                    outFile << "User selected option 4 - View employees\n";
+                    outFile << "Admin selected option 4 - View employees\n";
                     first_employee.Anton();
                     first_employee.Print();
                     cout << endl;
@@ -390,14 +399,14 @@ int main() {
                     break;
 
                 case 5:
-                    outFile << "User selected option 5 - View buyers\n";
+                    outFile << "Admin selected option 5 - View buyers\n";
                     buyer.Print();
                     cout << endl;
                     cout << endl;
                     break;
 
                 case 6:
-                    outFile << "User selected option 6 - View cashbox and news\n";
+                    outFile << "Admin selected option 6 - View cashbox and news\n";
 
                     pCashbox->print();
                     cout << endl;
@@ -411,12 +420,12 @@ int main() {
                     break;
 
                 case 7: {
-                    outFile << "User selected option 7 - Update information\n";
+                    outFile << "Admin selected option 7 - Update information\n";
                     pCashbox->setIncome(100);
                     break;
                 }
                 case 8:
-                    outFile << "User selected option 8 - Add a product\n";
+                    outFile << "Admin selected option 8 - Add a product\n";
                     cout << " You have been added a new dog!\n";
                     pDog->print();
 

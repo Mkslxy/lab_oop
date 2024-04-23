@@ -1,2 +1,1 @@
-User selected option 1 - Take a dog
-User selected option 7 - Update information
+User selected option 2 - Take a cat
