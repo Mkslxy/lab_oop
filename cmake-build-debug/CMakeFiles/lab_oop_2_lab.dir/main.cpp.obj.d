@@ -172,6 +172,11 @@ CMakeFiles/lab_oop_2_lab.dir/main.cpp.obj: D:\oop_4_5\lab_oop\main.cpp \
  D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
+ D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+ D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
+ D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ D:/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
  D:\oop_4_5\lab_oop\Dog.h D:\oop_4_5\lab_oop\Cat.h \
  D:\oop_4_5\lab_oop\Rabbit.h D:\oop_4_5\lab_oop\Employee.h \
  D:\oop_4_5\lab_oop\Human.h D:\oop_4_5\lab_oop\Buyer.h \

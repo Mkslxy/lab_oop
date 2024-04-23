@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <fstream>
 #include "Dog.h"
 #include "Cat.h"
 #include "Rabbit.h"
@@ -8,6 +9,7 @@
 #include "Till.h"
 #include "UpdateInformation.h"
 #include "AddProduct.h"
+
 using namespace std;
 
 string Rabbit::behavior = "Playful";
@@ -62,7 +64,7 @@ int main() {
     withdraw->withdraw(1000);
     deposit->deposit(1000);
 
-    Balance *array[] ={withdraw , deposit};
+    Balance *array[] = {withdraw, deposit};
 
     shared_ptr<UpdateInformation> pCashbox = make_shared<UpdateInformation>(15000, 500);
 
@@ -83,7 +85,7 @@ int main() {
             cout << "Invalid password! Please enter 0 or 1." << endl;
         }
     } while (password != 0 && password != 1);
-    if (password == 1){
+    if (password == 1) {
         do {
             cout << " Please choose which animal you want take in your house \n";
             cout << " 1. DOG \n";
@@ -217,10 +219,15 @@ int main() {
                             break;
                     }
                     break;
-                }
+            }
         } while (choice != 4);
 
-    }else{
+    } else {
+        ofstream outFile("user_choice.txt", ios::app);
+        if (!outFile.is_open()) {
+            cerr << "Error: Unable to open user_choice.txt\n";
+            return 1;
+        }
         do {
             cout << " Please choose which animal you want take in your house \n";
             cout << " 1. DOG \n";
@@ -237,7 +244,7 @@ int main() {
 
             switch (choice) {
                 case 1 :
-
+                    outFile << "User selected option 1 - Take a dog\n";
                     cout << " Which one you want to take ?\n";
                     cout << endl;
 
@@ -261,9 +268,9 @@ int main() {
 
                     cout << endl;
 
-                    if (!pDog){
+                    if (!pDog) {
 
-                    }else{
+                    } else {
                         pDog->print();
                     }
 
@@ -290,6 +297,7 @@ int main() {
                     break;
 
                 case 2:
+                    outFile << "User selected option 2 - Take a cat\n";
                     cout << "Which one you want to pick ?\n";
 
                     cout << "1.\n";
@@ -326,6 +334,7 @@ int main() {
                     break;
 
                 case 3:
+                    outFile << "User selected option 3 - Take a rabbit\n";
                     cout << " Which one you want to pick up ?\n";
 
                     cout << endl;
@@ -366,6 +375,7 @@ int main() {
                     }
                     break;
                 case 4:
+                    outFile << "User selected option 4 - View employees\n";
                     first_employee.Anton();
                     first_employee.Print();
                     cout << endl;
@@ -380,12 +390,15 @@ int main() {
                     break;
 
                 case 5:
+                    outFile << "User selected option 5 - View buyers\n";
                     buyer.Print();
                     cout << endl;
                     cout << endl;
                     break;
 
                 case 6:
+                    outFile << "User selected option 6 - View cashbox and news\n";
+
                     pCashbox->print();
                     cout << endl;
 
@@ -398,10 +411,14 @@ int main() {
                     break;
 
                 case 7: {
+                    outFile << "User selected option 7 - Update information\n";
                     pCashbox->setIncome(100);
                     break;
                 }
                 case 8:
+                    outFile << "User selected option 8 - Add a product\n";
+                    cout << " You have been added a new dog!\n";
+                    pDog->print();
 
                     break;
 
