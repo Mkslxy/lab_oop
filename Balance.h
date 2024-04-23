@@ -8,6 +8,8 @@ class Balance  : public Account {
 protected:
     int income;
     int sAss;
+
+
 public:
     Balance() : Account(0, 0), income(0), sAss(0) {}
 
