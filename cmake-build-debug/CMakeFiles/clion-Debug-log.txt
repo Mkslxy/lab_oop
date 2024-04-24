@@ -1,4 +1,13 @@
 "D:\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S D:\oop_4_5\lab_oop -B D:\oop_4_5\lab_oop\cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: D:/oop_4_5/lab_oop/cmake-build-debug
+-- Configuring done (0.5s)
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    Administration.h
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: lab_oop_2_lab
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
